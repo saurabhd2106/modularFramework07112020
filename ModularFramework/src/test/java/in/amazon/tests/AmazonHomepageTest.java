@@ -1,5 +1,6 @@
 package in.amazon.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -7,7 +8,7 @@ import com.aventstack.extentreports.Status;
 public class AmazonHomepageTest extends BaseTests {
 
 	@Test
-	public void searchProduct() throws Exception {
+	public void verifySearchProduct() throws Exception {
 
 		String product = "Apple Watch";
 
@@ -19,6 +20,10 @@ public class AmazonHomepageTest extends BaseTests {
 		String result = homepage.searchProduct(product, category);
 
 		extentReportUtils.addLog(Status.INFO, result);
+		
+		String expectedResult = "1-48 of over 10,000 results for \"apple watch\"";
+		
+		Assert.assertEquals(result, expectedResult);
 
 	}
 

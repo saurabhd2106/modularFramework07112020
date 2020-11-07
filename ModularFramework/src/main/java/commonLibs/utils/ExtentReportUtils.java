@@ -7,9 +7,9 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class ExtentReportUtils {
 
-	ExtentReports extentReports;
-	ExtentHtmlReporter htmlReporter;
-	ExtentTest extentTest;
+	private ExtentReports extentReports;
+	private ExtentHtmlReporter htmlReporter;
+	private ExtentTest extentTest;
 
 	public ExtentReportUtils(String htmlReportFilename) {
 

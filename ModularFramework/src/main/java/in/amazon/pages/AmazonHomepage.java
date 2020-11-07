@@ -31,7 +31,7 @@ public class AmazonHomepage extends BasePage {
 
 	}
 
-	public void searchProduct(String product, String category) throws Exception {
+	public String searchProduct(String product, String category) throws Exception {
 
 		elementControl.setText(searchBox, product);
 
@@ -41,7 +41,7 @@ public class AmazonHomepage extends BasePage {
 
 		String result = elementControl.getText(searchResult);
 
-		System.out.println(result);
+		return result;
 
 	}
 

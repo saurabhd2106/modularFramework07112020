@@ -2,24 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13964" started-at="2020-11-07T14:54:50 IST" finished-at="2020-11-07T14:55:04 IST">
+  <suite name="Default suite" duration-ms="13713" started-at="2020-11-07T15:32:27 IST" finished-at="2020-11-07T15:32:41 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13964" started-at="2020-11-07T14:54:50 IST" finished-at="2020-11-07T14:55:04 IST">
+    <test name="Default test" duration-ms="13713" started-at="2020-11-07T15:32:27 IST" finished-at="2020-11-07T15:32:41 IST">
       <class name="in.amazon.tests.AmazonHomepageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@2a17b7b6]" name="setup" is-config="true" duration-ms="9546" started-at="2020-11-07T14:54:50 IST" finished-at="2020-11-07T14:55:00 IST">
+        <test-method status="PASS" signature="preSetup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@5a1c0542]" name="preSetup" is-config="true" duration-ms="218" started-at="2020-11-07T15:32:27 IST" finished-at="2020-11-07T15:32:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@5a1c0542]" name="setup" is-config="true" duration-ms="9862" started-at="2020-11-07T15:32:28 IST" finished-at="2020-11-07T15:32:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchProduct()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@2a17b7b6]" name="searchProduct" duration-ms="3141" started-at="2020-11-07T14:55:00 IST" finished-at="2020-11-07T14:55:03 IST">
+        <test-method status="PASS" signature="searchProduct()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@5a1c0542]" name="searchProduct" duration-ms="2965" started-at="2020-11-07T15:32:37 IST" finished-at="2020-11-07T15:32:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@2a17b7b6]" name="cleanUp" is-config="true" duration-ms="1211" started-at="2020-11-07T14:55:03 IST" finished-at="2020-11-07T14:55:04 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@5a1c0542]" name="cleanUp" is-config="true" duration-ms="845" started-at="2020-11-07T15:32:40 IST" finished-at="2020-11-07T15:32:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="postCleanup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@5a1c0542]" name="postCleanup" is-config="true" duration-ms="421" started-at="2020-11-07T15:32:41 IST" finished-at="2020-11-07T15:32:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCleanup -->
       </class> <!-- in.amazon.tests.AmazonHomepageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

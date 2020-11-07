@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20765" started-at="2020-11-07T11:30:57 IST" finished-at="2020-11-07T11:31:17 IST">
+  <suite name="Suite" duration-ms="13964" started-at="2020-11-07T14:54:50 IST" finished-at="2020-11-07T14:55:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20765" started-at="2020-11-07T11:30:57 IST" finished-at="2020-11-07T11:31:17 IST">
-      <class name="in.amazon.demo.CommonDriverTest">
-        <test-method status="PASS" signature="verifyCommonDriver()[pri:0, instance:in.amazon.demo.CommonDriverTest@4bbfb90a]" name="verifyCommonDriver" duration-ms="20640" started-at="2020-11-07T11:30:57 IST" finished-at="2020-11-07T11:31:17 IST">
+    <test name="Test" duration-ms="13964" started-at="2020-11-07T14:54:50 IST" finished-at="2020-11-07T14:55:04 IST">
+      <class name="in.amazon.tests.AmazonHomepageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@2a17b7b6]" name="setup" is-config="true" duration-ms="9546" started-at="2020-11-07T14:54:50 IST" finished-at="2020-11-07T14:55:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCommonDriver -->
-      </class> <!-- in.amazon.demo.CommonDriverTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchProduct()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@2a17b7b6]" name="searchProduct" duration-ms="3141" started-at="2020-11-07T14:55:00 IST" finished-at="2020-11-07T14:55:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@2a17b7b6]" name="cleanUp" is-config="true" duration-ms="1211" started-at="2020-11-07T14:55:03 IST" finished-at="2020-11-07T14:55:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- in.amazon.tests.AmazonHomepageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

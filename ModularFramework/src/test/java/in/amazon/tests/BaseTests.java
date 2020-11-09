@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.Status;
 
 import commonLibs.implementation.CommonDriver;
+import commonLibs.implementation.ScreenshotControl;
 import commonLibs.utils.ConfigFileUtils;
 import commonLibs.utils.DateUtils;
 import commonLibs.utils.ExtentReportUtils;
@@ -34,6 +35,8 @@ public class BaseTests {
 	String configFilename;
 	Properties configProperties;
 
+	ScreenshotControl screenshotControl;
+
 	@BeforeSuite
 	public void preSetup() throws Exception {
 
@@ -55,17 +58,36 @@ public class BaseTests {
 
 		invokeBrowser();
 
+		initializeScreenshotVariable();
+
 		initializePages();
+
+	}
+
+	private void initializeScreenshotVariable() {
+
+		screenshotControl = new ScreenshotControl(driver);
 
 	}
 
 	@AfterMethod
 	public void cleanUp(ITestResult testResutlt) throws Exception {
 
+		String testcaseName = testResutlt.getName();
+
 		if (testResutlt.getStatus() == ITestResult.SUCCESS) {
 			extentReportUtils.addLog(Status.PASS, "All test step passed...");
 		} else if (testResutlt.getStatus() == ITestResult.FAILURE) {
 			extentReportUtils.addLog(Status.FAIL, "One or more test step failed..");
+
+			String executiontime = DateUtils.getCurentTime();
+			String screenshotFilename = String.format("%s/screenshots/%s-%s.jpeg", currentWorkingDirectory,
+					testcaseName, executiontime);
+
+			screenshotControl.captureAndSaveScreenshot(screenshotFilename);
+
+			extentReportUtils.addScreenshotToReport(screenshotFilename);
+
 		} else {
 			extentReportUtils.addLog(Status.SKIP, "One or more test step is skipped...");
 		}

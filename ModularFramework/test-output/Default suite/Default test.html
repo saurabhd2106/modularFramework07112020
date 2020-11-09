@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 07 16:20:08 IST 2020</td>
+<td>Started on:</td><td>Mon Nov 09 16:14:38 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17023 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44766 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,7 +75,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='in.amazon.tests.AmazonHomepageTest.verifySearchProduct()'><b>verifySearchProduct</b><br>Test class: in.amazon.tests.AmazonHomepageTest</td>
+<td title='in.amazon.tests.AmazonHomepageTest.verifySearchProduct()'><b>verifySearchProduct</b><br>Test class: in.amazon.tests.AmazonHomepageTest<br>Parameters: Apple Watch, Electronics</td>
 <td><div><pre>java.lang.AssertionError: expected [1-48 of over 10,000 results for &quot;apple watch&quot;] but found [1-24 of over 2,000 results for &quot;Apple Watch&quot;
 Sort by:
         
@@ -96,7 +96,7 @@ Sort by:
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:26)
+	at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -125,8 +125,8 @@ Sort by:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1594791957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1594791957'><pre>java.lang.AssertionError: expected [1-48 of over 10,000 results for &quot;apple watch&quot;] but found [1-24 of over 2,000 results for &quot;Apple Watch&quot;
+</pre></div><a href='#' onClick='toggleBox("stack-trace55755528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace55755528'><pre>java.lang.AssertionError: expected [1-48 of over 10,000 results for &quot;apple watch&quot;] but found [1-24 of over 2,000 results for &quot;Apple Watch&quot;
 Sort by:
         
             Featured
@@ -146,7 +146,7 @@ Sort by:
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:26)
+	at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -176,8 +176,196 @@ Sort by:
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>in.amazon.tests.AmazonHomepageTest@5a1c0542</td></tr>
+<td>4</td>
+<td>in.amazon.tests.AmazonHomepageTest@27a8c74e</td></tr>
+<tr>
+<td title='in.amazon.tests.AmazonHomepageTest.verifySearchProduct()'><b>verifySearchProduct</b><br>Test class: in.amazon.tests.AmazonHomepageTest<br>Parameters: Iphone, Electronics</td>
+<td><div><pre>java.lang.AssertionError: expected [1-48 of over 10,000 results for &quot;apple watch&quot;] but found [1-24 of over 10,000 results for &quot;Iphone&quot;
+Sort by:
+        
+            Featured
+        
+            Price: Low to High
+        
+            Price: High to Low
+        
+            Avg. Customer Review
+        
+            Newest Arrivals
+        
+    Sort by:Featured]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1902455960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1902455960'><pre>java.lang.AssertionError: expected [1-48 of over 10,000 results for &quot;apple watch&quot;] but found [1-24 of over 10,000 results for &quot;Iphone&quot;
+Sort by:
+        
+            Featured
+        
+            Price: Low to High
+        
+            Price: High to Low
+        
+            Avg. Customer Review
+        
+            Newest Arrivals
+        
+    Sort by:Featured]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>in.amazon.tests.AmazonHomepageTest@27a8c74e</td></tr>
+<tr>
+<td title='in.amazon.tests.AmazonHomepageTest.verifySearchProduct()'><b>verifySearchProduct</b><br>Test class: in.amazon.tests.AmazonHomepageTest<br>Parameters: null, null</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at commonLibs.implementation.CommonElement.setText(CommonElement.java:52)
+	at in.amazon.pages.AmazonHomepage.searchProduct(AmazonHomepage.java:36)
+	at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1997625595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997625595'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at commonLibs.implementation.CommonElement.setText(CommonElement.java:52)
+	at in.amazon.pages.AmazonHomepage.searchProduct(AmazonHomepage.java:36)
+	at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.amazon.tests.AmazonHomepageTest@27a8c74e</td></tr>
 </table><p>
 </body>
 </html>

@@ -6,7 +6,7 @@
       <class name="in.amazon.tests.AmazonHomepageTest">
         <methods>
           <include name="preSetup"/>
-          <include name="verifySearchProduct" invocation-numbers="0 1 2"/>
+          <include name="verifySearchProduct"/>
           <include name="setup"/>
           <include name="cleanUp"/>
           <include name="postCleanup"/>

@@ -6,10 +6,11 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 import in.amazon.utils.TestDataSource;
+import in.amazon.utils.TestDatasourceDb;
 
 public class AmazonHomepageTest extends BaseTests {
 
-	@Test(dataProvider = "getDataForSearchProduct", dataProviderClass = TestDataSource.class)
+	@Test(dataProvider = "getDataForSearchProduct", dataProviderClass = TestDatasourceDb.class)
 	public void verifySearchProduct(String product, String category) throws Exception {
 
 		extentReportUtils.createTest(

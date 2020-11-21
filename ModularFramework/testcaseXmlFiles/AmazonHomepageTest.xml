@@ -3,16 +3,11 @@
 <suite name="Suite" parallel="tests">
 
 	<test thread-count="5" name="Chrome Test">
-		<parameter name="browserType" value="chrome-remote"></parameter>
+		<parameter name="browserType" value="chrome"></parameter>
 		<classes>
 			<class name="in.amazon.tests.AmazonHomepageTest" />
 		</classes>
 	</test> <!-- Test -->
 	
-	<test thread-count="5" name="Edge Test">
-		<parameter name="browserType" value="chrome-remote"></parameter>
-		<classes>
-			<class name="in.amazon.tests.AmazonHomepageTest" />
-		</classes>
-	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

@@ -1,113 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="1" failed="1" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4226" started-at="2020-11-09T17:39:22 IST" finished-at="2020-11-09T17:39:26 IST">
+  <suite name="Suite" duration-ms="13862" started-at="2020-11-21T11:13:45 IST" finished-at="2020-11-21T11:13:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4226" started-at="2020-11-09T17:39:22 IST" finished-at="2020-11-09T17:39:26 IST">
+    <test name="Chrome Test" duration-ms="45" started-at="2020-11-21T11:13:45 IST" finished-at="2020-11-21T11:13:45 IST">
       <class name="in.amazon.tests.AmazonHomepageTest">
-        <test-method status="PASS" signature="preSetup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@59e5ddf]" name="preSetup" is-config="true" duration-ms="224" started-at="2020-11-09T17:39:22 IST" finished-at="2020-11-09T17:39:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preSetup -->
-        <test-method status="SKIP" signature="verifySearchProduct(java.lang.String, java.lang.String)[pri:0, instance:in.amazon.tests.AmazonHomepageTest@59e5ddf]" name="verifySearchProduct" duration-ms="0" started-at="2020-11-09T17:39:26 IST" data-provider="getDataForSearchProduct" finished-at="2020-11-09T17:39:26 IST">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.]]>
-            </message>
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:in.amazon.tests.AmazonHomepageTest@74650e52]" name="setup" is-config="true" duration-ms="2" started-at="2020-11-21T11:13:45 IST" finished-at="2020-11-21T11:13:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome-remote]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:797)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
-at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
-at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
-at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
-at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
-at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
-at java.sql.DriverManager.getConnection(Unknown Source)
-at java.sql.DriverManager.getConnection(Unknown Source)
-at commonLibs.utils.DatabaseDriver.openConnection(DatabaseDriver.java:17)
-at in.amazon.utils.TestDatasourceDb.getDataForSearchProduct(TestDatasourceDb.java:28)
+              <![CDATA[java.lang.NullPointerException
+at in.amazon.tests.BaseTests.invokeBrowser(BaseTests.java:130)
+at in.amazon.tests.BaseTests.setup(BaseTests.java:61)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 25 more
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
-at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
-at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
-at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
-at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
-... 39 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-at java.net.PlainSocketImpl.connect(Unknown Source)
-at java.net.SocksSocketImpl.connect(Unknown Source)
-at java.net.Socket.connect(Unknown Source)
-at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
-at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
-... 42 more
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="verifySearchProduct()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@74650e52]" name="verifySearchProduct" duration-ms="0" started-at="2020-11-21T11:13:45 IST" finished-at="2020-11-21T11:13:45 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at in.amazon.tests.BaseTests.invokeBrowser(BaseTests.java:130)
+at in.amazon.tests.BaseTests.setup(BaseTests.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchProduct -->
-        <test-method status="PASS" signature="postCleanup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@59e5ddf]" name="postCleanup" is-config="true" duration-ms="2" started-at="2020-11-09T17:39:26 IST" finished-at="2020-11-09T17:39:26 IST">
+        <test-method status="SKIP" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:in.amazon.tests.AmazonHomepageTest@74650e52]" name="cleanUp" is-config="true" duration-ms="-1605937425619" started-at="2020-11-21T11:13:45 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- in.amazon.tests.AmazonHomepageTest -->
+    </test> <!-- Chrome Test -->
+    <test name="Edge Test" duration-ms="13862" started-at="2020-11-21T11:13:45 IST" finished-at="2020-11-21T11:13:59 IST">
+      <class name="in.amazon.tests.AmazonHomepageTest">
+        <test-method status="PASS" signature="preSetup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@3043fe0e]" name="preSetup" is-config="true" duration-ms="115" started-at="2020-11-21T11:13:45 IST" finished-at="2020-11-21T11:13:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:in.amazon.tests.AmazonHomepageTest@3043fe0e]" name="setup" is-config="true" duration-ms="9316" started-at="2020-11-21T11:13:45 IST" finished-at="2020-11-21T11:13:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome-remote]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="verifySearchProduct()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@3043fe0e]" name="verifySearchProduct" duration-ms="3766" started-at="2020-11-21T11:13:54 IST" finished-at="2020-11-21T11:13:58 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1-48 of over 10,000 results for "apple watch"] but found [1-24 of over 2,000 results for "Apple Watch"
+Sort by:
+        
+            Featured
+        
+            Price: Low to High
+        
+            Price: High to Low
+        
+            Avg. Customer Review
+        
+            Newest Arrivals
+        
+    Sort by:Featured]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1-48 of over 10,000 results for "apple watch"] but found [1-24 of over 2,000 results for "Apple Watch"
+Sort by:
+        
+            Featured
+        
+            Price: Low to High
+        
+            Price: High to Low
+        
+            Avg. Customer Review
+        
+            Newest Arrivals
+        
+    Sort by:Featured]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at in.amazon.tests.AmazonHomepageTest.verifySearchProduct(AmazonHomepageTest.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchProduct -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:in.amazon.tests.AmazonHomepageTest@3043fe0e]" name="cleanUp" is-config="true" duration-ms="749" started-at="2020-11-21T11:13:58 IST" finished-at="2020-11-21T11:13:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchProduct status=FAILURE method=AmazonHomepageTest.verifySearchProduct()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@3043fe0e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="postCleanup()[pri:0, instance:in.amazon.tests.AmazonHomepageTest@3043fe0e]" name="postCleanup" is-config="true" duration-ms="405" started-at="2020-11-21T11:13:59 IST" finished-at="2020-11-21T11:13:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanup -->
       </class> <!-- in.amazon.tests.AmazonHomepageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Edge Test -->
+  </suite> <!-- Suite -->
 </testng-results>

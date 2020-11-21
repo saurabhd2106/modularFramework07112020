@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.Status;
 
@@ -53,10 +54,11 @@ public class BaseTests {
 
 	}
 
+	@Parameters("browserType")
 	@BeforeMethod
-	public void setup() throws Exception {
+	public void setup(String browserType) throws Exception {
 
-		invokeBrowser();
+		invokeBrowser(browserType);
 
 		initializeScreenshotVariable();
 
@@ -124,10 +126,8 @@ public class BaseTests {
 
 	}
 
-	private void invokeBrowser() throws Exception {
+	private void invokeBrowser(String browserType) throws Exception {
 		extentReportUtils.createTest("Setup - Setting up before a test case");
-
-		String browserType = configProperties.getProperty("browserType");
 
 		extentReportUtils.addLog(Status.INFO, "Browser invoked is " + browserType);
 		cmnDriver = new CommonDriver(browserType);

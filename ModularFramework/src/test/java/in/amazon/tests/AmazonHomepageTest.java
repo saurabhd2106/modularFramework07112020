@@ -5,13 +5,14 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-import in.amazon.utils.TestDataSource;
-import in.amazon.utils.TestDatasourceDb;
-
 public class AmazonHomepageTest extends BaseTests {
 
-	@Test(dataProvider = "getDataForSearchProduct", dataProviderClass = TestDatasourceDb.class)
-	public void verifySearchProduct(String product, String category) throws Exception {
+	@Test
+	
+	public void verifySearchProduct() throws Exception {
+		
+		String product = "Apple Watch";
+		String category = "Electronics";
 
 		extentReportUtils.createTest(
 				"TC-001 - Verify Search Product with Product and category as - " + product + " and " + category);
